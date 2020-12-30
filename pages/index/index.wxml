@@ -1,0 +1,174 @@
+<!--index.wxml-->
+<view id="app">
+  <view class="top">
+    <view>疫情期间学生进出校园审批:填写申请(已完成)</view>
+    <view class="flownum">流水号:853923</view>
+  </view>
+
+  <view class="bar">
+    <view>此任务已处理,您无需任何操作</view>
+  </view>
+
+  <view class="out">
+    <view class="list">
+      <view>    </view>
+      <view class="big">
+        <view>疫情防控期间学生出</view>
+        <view>入校园审批</view>
+      </view>
+
+      <view class="twoItems" wx:for="{{baseItems}}">
+        <view class="item">{{baseItems[index].item}}</view>
+        <view class="value">{{baseItems[index].value}}</view>
+      </view>
+
+      <view class="twoItems allgrey">
+        <view class="midTxt">出入事由（具体描述，如体检事由、体验医院、就医原因、就医医院等）</view>
+      </view>
+
+      <view class="twoItems" wx:for="{{outItems}}">
+        <view class="item">{{outItems[index].item}}</view>
+        <view class="value">{{outItems[index].value}}</view>
+      </view>
+
+      <view class="twoItems">
+        <view class="item">外出区域</view>
+        <view class="desValue">
+          <view class="destination">
+            <view>目的地所在校区城市内</view>
+            <view>目的地所在校区城市外</view>
+          </view>
+          <view class="site">
+            <view>珠海市</view>
+            <view>香洲区</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="twoItems">
+        <view class="item">申请出入时间段</view>
+        <view class="desValueTime">
+          <view class="time">
+            <view class="timeItem">
+              2020-09-23
+            </view>
+            <view class="timeItem">
+              8:00
+            </view>
+            <view class="timeItem">
+              -
+            </view>
+            <view class="timeItem">
+              23:00
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="twoItems">
+        <view class="item">相关纸质证明</view>
+        <view class="value">
+          <text class="prove">image.jpg</text>
+          (3.1M)
+        </view>
+      </view>
+
+      <view class="twoItems allgrey">
+        <view class="midTxt">外出路线方案</view>
+      </view>
+
+      <view class="twoItems" wx:for="{{routeItems}}">
+        <view class="item">{{routeItems[index].item}}</view>
+        <view class="value">{{routeItems[index].value}}</view>
+      </view>
+
+      <view class="twoItems allgrey">
+        <view class="midTxt">本人承诺</view>
+      </view>
+
+      <view class="twoItems" wx:for="{{commitItems}}">
+        <view class="item">{{commitItems[index].item}}</view>
+        <view class="value">{{commitItems[index].value}}</view>
+      </view>
+
+      <view class="twoItems allgrey">
+        <view class="midTxt">历史审批</view>
+      </view>
+
+      <view class="twoItems" wx:for="{{historyItems}}">
+        <view class="item">{{historyItems[index].item}}</view>
+        <view class="value">{{historyItems[index].value}}</view>
+      </view>
+
+    </view>
+
+    <view class="passOut">
+      <view class="pass">
+        <view class="passItem">
+          <view>
+            <view>
+              <text class="name prove">陈韶鹏</text>
+              <text class="prove"> 填写/办理了</text>
+              <text class="name prove">学生处或校区审批</text>
+              <text class="greenPass">(审核通过)</text>
+            </view>
+            <view class="passTime">约16小时之前</view>
+          </view>
+        </view>
+
+        <view class="passItem">
+          <view>
+            <view>
+              <text class="name prove">冯璐秀</text>
+              <text class="prove"> 填写/办理了</text>
+              <text class="name prove">学生院领导审批</text>
+              <text class="greenPass">(审核通过)</text>
+            </view>
+            <view class="passTime">1天前</view>
+          </view>
+        </view>
+
+        <view class="passItem">
+          <view>
+            <view>
+              <text class="name prove">李子昂</text>
+              <text class="prove"> 填写/办理了</text>
+              <text class="name prove">辅导员审批</text>
+              <text class="greenPass">(审核通过)</text>
+            </view>
+            <view class="passTime">1天前</view>
+          </view>
+        </view>
+
+        <view class="passItem">
+          <view>
+            <view>
+              <text class="name prove">您({{baseItems[0].value}})</text>
+              <text class="prove"> 填写/办理了</text>
+              <text class="name prove">填写申请</text>
+              <text class="greenPass">(提交申请)</text>
+            </view>
+            <view class="passTime">1天前</view>
+          </view>
+        </view>
+
+        <view class="passItem">
+          <view>
+            <view>
+              <text class="name prove">您({{baseItems[0].value}})</text>
+              <text class="prove"> 填写/办理了</text>
+              <text class="name prove">进入服务</text>
+              <text class="greenPass">(进入填写)</text>
+            </view>
+            <view class="passTime">1天前</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="logo">
+      <view class="logoWord">2009 - 2020.暨南大学(jnu.edu.cn),All rights reserved.</view>
+      <view class="logoWord">Version 20200507-203528</view>
+    </view>
+  </view>
+</view>

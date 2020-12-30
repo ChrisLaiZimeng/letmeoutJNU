@@ -1,0 +1,159 @@
+/**index.wxss**/
+#app{
+  background-color: #e5e5e5;
+}
+.top{
+  background-color: #4CAF50;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-size: 14px;
+  padding-left: 6px;
+}
+.flownum{
+  font-size: 12px;
+}
+.bar{
+  height: 40px;
+  line-height: 40px;
+  color: #4CAF50;
+  padding-left: 6px;
+  background-color: #F5F5F5;
+  font-size: 14px;
+}
+
+.out{
+  margin-top: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+.list{
+  margin:10px 30px;
+  border: 2px solid #F2F2F2;
+}
+
+.big{
+  font-size: 32px;
+}
+.big view{
+  width: 100%;
+  text-align: center;
+}
+
+.twoItems{
+  border: 1px solid black;
+  border-bottom: none;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-family: SimSun;
+}
+.twoItems:last-child{
+  border-bottom: 1px solid black;
+}
+.item{
+  border-right: 1px solid black;
+  width: 25%;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 4px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.value{
+  width: 75%;
+  text-align: center;
+  padding: 4px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.allgrey{
+  background-color: #F2F2F2;
+}
+.midTxt{
+  padding: 4px 5px;
+  text-align: center;
+}
+
+.desValue{
+  width: 75%;
+  text-align: center;
+  padding: 4px 5px;
+}
+.destination{
+  border-bottom: 1px solid black;
+  margin: 0 -5px;
+  padding-bottom: 4px;
+}
+.site{
+  padding-top: 4px;
+  width: 100%;
+}
+.desValueTime{
+  width: 75%;
+  text-align: center;
+  padding: 20px 5px;
+}
+.time{
+  border: 1px solid black;
+}
+.timeItem{
+  border-bottom: 1px solid black;
+  padding: 4px 5px;
+  text-align: center;
+}
+.timeItem:last-child{
+  border: none;
+}
+.prove{
+  color: #0560a6;
+}
+
+.passOut{
+  background-color:#e5e5e5;
+  padding: 6px 0;
+}
+.pass{
+  background-color:white;
+  padding: 15px 10px;
+  margin: 10px 0;
+}
+.passItem{
+  font-size: 14px;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 10px;
+}
+.passItem:last-child{
+  padding-bottom: 0;
+}
+.passItem:last-child{
+  border:none;
+}
+.name{
+  font-weight: bold;
+}
+.logo{
+  border-top: 1px solid #666666;
+  padding: 10px 0;
+  background-color: #F2F2F2;
+}
+.logoWord{
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  font-weight: lighter;
+}
+.greenPass{
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 14px;
+}
+.passTime{
+  color: #808080;
+  margin-top: 3px;
+  position: relative;
+  text-align: right;
+}
